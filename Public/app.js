@@ -1,0 +1,173 @@
+const positions = ["Goal Keeper", "Defender", "Midfielder", "Forward"];
+const state = {
+  clubs: [
+    { name: "Arsenal", established: 1886 },
+    { name: "Aston Villa", established: 1887 },
+    { name: "Bournemouth", established: 1899 },
+    { name: "Brentford", established: 1889 },
+    { name: "Brighton & Hove Albion", established: 1901 },
+    { name: "Chelsea", established: 1905 },
+    { name: "Crystal Palace", established: 1905 },
+    { name: "Everton", established: 1878 },
+    { name: "Fulham", established: 1879 },
+    { name: "Ipswich Town", established: 1878 },
+    { name: "Leicester City", established: 1884 },
+    { name: "Liverpool", established: 1892 },
+    { name: "Manchester City", established: 1880 },
+    { name: "Manchester United", established: 1878 },
+    { name: "Newcastle United", established: 1892 },
+    { name: "Nottingham Forest", established: 1865 },
+    { name: "Southampton", established: 1885 },
+    { name: "Tottenham Hotspur", established: 1882 },
+    { name: "West Ham United", established: 1895 },
+    { name: "Wolverhampton Wanderers", established: 1877 },
+  ],
+  stadiums: [
+    {
+      name: "Emirates Stadium",
+      address: "Hornsey Rd, London N7 7AJ",
+      club: "Arsenal",
+    },
+    {
+      name: "Villa Park",
+      address: "Trinity Rd, Birmingham B6 6HE",
+      club: "Aston Villa",
+    },
+    {
+      name: "Dean Court",
+      address: "Kings Park, Bournemouth BH7 7AF",
+      club: "Bournemouth",
+    },
+    {
+      name: "Brentford Community Stadium",
+      address: "Lionel Rd N, Brentford TW8 0QE",
+      club: "Brentford",
+    },
+    {
+      name: "Falmer Stadium",
+      address: "Village Way, Brighton BN1 9BL",
+      club: "Brighton & Hove Albion",
+    },
+    {
+      name: "Stamford Bridge",
+      address: "Fulham Rd, London SW6 1HS",
+      club: "Chelsea",
+    },
+    {
+      name: "Selhurst Park",
+      address: "Selhurst Park, London SE25 6PU",
+      club: "Crystal Palace",
+    },
+    {
+      name: "Goodison Park",
+      address: "Goodison Rd, Liverpool L4 4EL",
+      club: "Everton",
+    },
+    {
+      name: "Craven Cottage",
+      address: "Stevenage Rd, London SW6 6HH",
+      club: "Fulham",
+    },
+    {
+      name: "Portman Road",
+      address: "Portman Rd, Ipswich IP1 2DA",
+      club: "Ipswich Town",
+    },
+    {
+      name: "King Power Stadium",
+      address: "Filbert Way, Leicester LE2 7FL",
+      club: "Leicester City",
+    },
+    {
+      name: "Anfield",
+      address: "Anfield Rd, Liverpool L4 0TH",
+      club: "Liverpool",
+    },
+    {
+      name: "Etihad Stadium",
+      address: "Ashton New Rd, Manchester M11 3FF",
+      club: "Manchester City",
+    },
+    {
+      name: "Old Trafford",
+      address: "Sir Matt Busby Way, Stretford, Manchester M16 0RA",
+      club: "Manchester United",
+    },
+    {
+      name: "St James' Park",
+      address: "St. James' Pk, Newcastle upon Tyne NE1 4ST",
+      club: "Newcastle United",
+    },
+    {
+      name: "City Ground",
+      address: "Nottingham NG2 5FJ",
+      club: "Nottingham Forest",
+    },
+    {
+      name: "St Mary's Stadium",
+      address: "Britannia Rd, Southampton SO14 5FP",
+      club: "Southampton",
+    },
+    {
+      name: "Tottenham Hotspur Stadium",
+      address: "782 High Rd, London N17 0BX",
+      club: "Tottenham Hotspur",
+    },
+    {
+      name: "London Stadium",
+      address: "Marshgate Ln, London E20 2ST",
+      club: "West Ham United",
+    },
+    {
+      name: "Molineux Stadium",
+      address: "Wolverhampton WV1 4QR",
+      club: "Wolverhampton Wanderers",
+    },
+  ],
+  players: [
+    {
+      name: "David de Gea",
+      club: "Manchester United",
+      position: "Goal Keeper",
+    },
+    {
+      name: "Victor Lindelof",
+      club: "Manchester United",
+      position: "Defender",
+    },
+    { name: "Harry Maguire", club: "Manchester United", position: "Defender" },
+    { name: "Luke Shaw", club: "Manchester United", position: "Defender" },
+    {
+      name: "Aaron Wan-Bissaka",
+      club: "Manchester United",
+      position: "Defender",
+    },
+    {
+      name: "Nemanja Matic",
+      club: "Manchester United",
+      position: "Midfielder",
+    },
+    { name: "Paul Pogba", club: "Manchester United", position: "Midfielder" },
+    { name: "Fred", club: "Manchester United", position: "Midfielder" },
+    {
+      name: "Scott McTominay",
+      club: "Manchester United",
+      position: "Midfielder",
+    },
+    {
+      name: "Bruno Fernandes",
+      club: "Manchester United",
+      position: "Midfielder",
+    },
+    { name: "Jadon Sancho", club: "Manchester United", position: "Forward" },
+    {
+      name: "Cristiano Ronaldo",
+      club: "Manchester United",
+      position: "Forward",
+    },
+    { name: "Marcus Rashford", club: "Manchester United", position: "Forward" },
+    { name: "Anthony Martial", club: "Manchester United", position: "Forward" },
+    { name: "Edinson Cavani", club: "Manchester United", position: "Forward" },
+  ],
+  matches: [],
+};
